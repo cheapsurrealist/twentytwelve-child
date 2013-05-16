@@ -120,22 +120,27 @@ body {
 .entry-content h2 {
 	font-size: 28px;
 	font-size: 2rem;
+	margin: 0 0 14px;
 }
 .entry-content h3 {
 	font-size: 25px;
 	font-size: 1.78rem;
+	margin: 0 0 14px;
 }
 .entry-content h4 {
 	font-size: 21px;
 	font-size: 1.5rem;
+	margin: 0 0 14px;
 }
 .entry-content h5 {
 	font-size: 18px;
 	font-size: 1.28rem;
+	margin: 0 0 14px;
 }
 .entry-content h6 {
 	font-size: 16px;
 	font-size: 1.14rem;
+	margin: 0 0 14px;
 }
 .entry-content a.donate-button:active {
 	/*box-shadow: inset 0 0 10px 5px rgba(0,0,0,0.4);*/
