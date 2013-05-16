@@ -98,6 +98,23 @@ function twentytwelve_entry_meta() {
 }
 
 /**
+ * These fixes work with the inflexible wordpress system
+ * to make sure our html validates...
+ */
+function dredf_content_fixes( $content )
+{
+  // Fix bug with magazine-columns where extra p's are added
+  $content = preg_replace(
+    '/(<p>)?((<\/div>)?<div class="column c\d">)<\/p>/', 
+    '\2',
+    $content
+  );  
+
+  return $content;
+}
+add_filter( 'the_content', 'dredf_content_fixes', 10 );
+
+/**
  * Add WAI-ARIA markers
  * and tabindex to give links focus when clicked
  * and only-child to simulate :only-child selector
