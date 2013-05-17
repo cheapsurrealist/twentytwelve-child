@@ -5,6 +5,10 @@
  */
 function twentytwelve_child_enqueue()
 {
+	// Add myriad pro for Peter's dev server (since it isn't covered by typekit).
+	wp_register_style( 'myriad', get_stylesheet_directory_uri() . '/myriad-pro-condensed.css' );
+	wp_enqueue_style( 'myriad' );
+
   // Load nav menu
   //wp_register_script( 'nav', get_stylesheet_directory_uri() . '/nav.js', array( 'jquery' ) );
   //wp_enqueue_script( 'nav' );
