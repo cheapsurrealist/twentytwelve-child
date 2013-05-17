@@ -631,6 +631,8 @@ footer[role="contentinfo"] a:hover {
   clear: both;
   display: block;
   overflow: hidden;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 .main-navigation li {
   padding-top: 5px;
@@ -666,6 +668,8 @@ ul.second-level {
   overflow: hidden;
   margin-top: -3px;
   padding: 0 10px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 .second-level li a { 
   color: #555;
