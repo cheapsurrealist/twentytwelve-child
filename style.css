@@ -269,25 +269,17 @@ img.alignleft,
 }
 
 /* social media buttons */
-.socialmedia-buttons a img {
-	padding-left: 2%;
-	padding-right: 2%;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-	-moz-border-radius: 0;
-	-webkit-border-radius: 0;
-	border-radius: 0;
-}
 .socialmedia-buttons {
 	width: 100%;
 	display: inline;
+}
+.socialmedia-buttons a {
+	margin-right: 4%;
+}
+.socialmedia-buttons a img {
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-	-moz-border-radius: 0;
-	-webkit-border-radius: 0;
-	border-radius: 0;
 }
 
 /* Buttons */
@@ -307,9 +299,6 @@ li.bypostauthor cite span {
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-	-moz-border-radius: 0;
-	-webkit-border-radius: 0;
-	border-radius: 0;
 }
 .menu-toggle,
 input[type="submit"],
@@ -372,6 +361,7 @@ input[type="submit"].toggled-on {
   	color: #fff;
   	padding-top: 15px;
   	padding-top: 1.071428571rem;
+		border-radius: 2px;
 }
 .widget-area .sidebar-donate div {
 	margin-bottom: 15px;
@@ -387,6 +377,7 @@ input[type="submit"].toggled-on {
   	color: #14a;
   	text-decoration: none;
   	border-bottom: none;
+		border-radius: 0 0 2px 2px;
 }
 .widget-area .sidebar-donate:hover {
 	color:d23;
@@ -395,6 +386,7 @@ input[type="submit"].toggled-on {
   	padding: 14px;
   	background: #14a;
   	color: #fff;
+		border-radius: 2px;
 }
 .widget-area .widget a.donate-button:visited,
 .widget-area .widget a.donate-button:link,
@@ -405,14 +397,14 @@ input[type="submit"].toggled-on {
 	font-size: 1rem;
 	letter-spacing: 1px;
     padding: 4px 6px 6px 6px;
-    border: 1px solid #d2d2d2;
 	font-weight: 600;
 	line-height: 1.5;
 	background: #d23;
 	color: #fff;
-	border-radius: 0;
 	text-align: center;
 	margin-bottom: 40px;
+	border-radius: 3px;
+	border: none;
 }
 .widget-area .widget a.donate-button:hover,
 .entry-content a.donate-button:hover {
@@ -670,6 +662,7 @@ ul.second-level {
   padding: 0 10px;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	border-radius: 2px;
 }
 .second-level li a { 
   color: #555;
