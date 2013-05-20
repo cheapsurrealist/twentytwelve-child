@@ -460,11 +460,6 @@ input[type="submit"].toggled-on {
 	color: #666;
 	margin: 5px 0 10px;
 }
-.display-posts-listing .title {	
-	font-size: 16px;
- 	font-size: 1.14rem;
-	line-height: 1.4;
-}
 #magazine-columns h2 a {
 	color: #37a;
 	font-weight: 600;

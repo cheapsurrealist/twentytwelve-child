@@ -50,7 +50,7 @@ function twentytwelve_child_display_posts_output( $output, $atts, $image, $title
     $category = ''; 
 
 	// Now let's rebuild the output and add the $author to it
-	$output = '<' . $inner_wrapper . ' class="listing-item">' . $image . $avatar . $title . $author . $date . $excerpt . $category . '</' . $inner_wrapper . '>';
+	$output = '<' . $inner_wrapper . ' class="listing-item">' . $image . $avatar . '<h3>' . $title . '</h3>' . $author . $date . $excerpt . $category . '</' . $inner_wrapper . '>';
 	
 	// Finally we'll return the modified output
 	return $output;
