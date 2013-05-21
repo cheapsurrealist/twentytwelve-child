@@ -36,6 +36,9 @@ function twentytwelve_child_display_posts_output( $output, $atts, $image, $title
 	{
 		$author = '<span class="author"> by ' . get_the_author() . '</span>';
 		$avatar = '<span class="avatar alignleft">' . get_avatar( get_the_author_meta( 'ID' ) ) . '</span>';
+
+		// Use the_content instead of the_excerpt so we get links, videos, other cool stuffs...
+		$excerpt = apply_filters( 'the_content', get_the_content() );
 	}
 	else
 	{
