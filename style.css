@@ -21,7 +21,15 @@ img.header-image {
 	margin: 0 1rem 1rem 0;
 	box-shadow: none;
 }
-a {
+
+/* Define all links in same place */
+a,
+.entry-content a,
+.comment-content a,
+.comments-link a,
+.entry-meta a,
+.widget-area .widget a,
+.template-front-page .widget-area .widget li a {
 	color: #37a;
 	font-weight: 600;
 	-webkit-transition: all .2s ease-in-out;
@@ -32,10 +40,22 @@ a {
 	text-decoration: none;
 	border-bottom: 1px solid #ccc;
 }
-a:visited {
+a:visited,
+.entry-content a:visited,
+.comment-content a:visited,
+.comments-link a:visited,
+.entry-meta a:visited,
+.widget-area .widget a:visited,
+.template-front-page .widget-area .widget li a:visited {
 	color: #76a;
 }
-a:hover {
+a:hover,
+.entry-content a:hover,
+.comment-content a:hover,
+.comments-link a:hover,
+.entry-meta a:hover,
+.widget-area .widget a:hover,
+.template-front-page .widget-area .widget li a:hover {
 	color: #b00;
 	border-bottom: 1px solid #b00;
 }
@@ -65,21 +85,13 @@ h6 {
 	height: auto;
 	background: #444;
 	color: #fff;
-	padding: 7px 0 20px 0;
-	padding: 0.5rem 0 1.428571428rem 0;
+	padding: 7px 0 21px;
+	padding: 0.5rem 0 1.5rem 0;
 }
 .pre-page-header-container {
 	max-width: 1100px;
 	margin: 0 auto;
 	padding: 0 3%;
-}
-/* So that footer sticks to bottom */
-html {
-	height: 100%;
-}
-body {
-	min-height: 100%;
-	position: relative;
 }
 .alignleft-plus {
 	float: left;
@@ -104,13 +116,52 @@ body {
 	outline: 1px dotted #fff;
 }
 
-/* hide article header on home page */
-#post-9 .entry-header {
-	display: none;
+/* Search Form */
+.header-search {
+	float: right;
+	width: 23%;
+	margin: 14px 0;
+	margin: 1rem 0;
 }
-.home .wp-caption.alignleft {
-	margin: 0 5px;
+.header-search input[type="text"] {
+	width: 50%;
 }
+
+/* Header */
+.site-header {
+	padding: 14px 0;
+	padding: 1rem 0;
+}
+.site-header h1 {
+	font-family: "myriad-pro-condensed", "Arial Narrow", "open sans", sans-serif;
+	font-size: 28px;
+	font-size: 2rem;
+	font-weight: normal;
+}
+.site-header h2 {
+	font-family: "myriad-pro-condensed", "Arial Narrow", "open sans", sans-serif;
+	font-size: 21px;
+	font-size: 1.5rem;
+	font-weight: normal;
+	color: #d23;
+	line-height: 1;
+	font-style: italic;
+}
+.site-content article {
+	word-wrap: break-word;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	hyphens: none;
+}
+.breadcrumbs {
+	font-size: 12px;
+	font-size: 0.86rem;
+	line-height: 1.14;
+	font-weight: 600;
+	clear: both;
+}
+
+/* content */
 .entry-header .entry-title {
 	font-size: 35px;
 	font-size: 2.5rem;
@@ -141,75 +192,6 @@ body {
 	font-size: 1.14rem;
 	margin: 0 0 14px;
 }
-.entry-content a.donate-button:active {
-	/*box-shadow: inset 0 0 10px 5px rgba(0,0,0,0.4);*/
-}
-
-/* Search Form */
-.header-search {
-	float: right;
-	width: 23%;
-	margin: 14px 0;
-	margin: 1rem 0;
-	padding: 7px;
-	padding: 0.5rem;
-}
-.search-label {
-
-}
-.header-search input[type="text"] {
-	width: 50%;
-}
-/*.field-2 {
-	width: 59%;
-}*/
-
-/* Header */
-.site-header {
-	padding: 14px 0;
-	padding: 1rem 0;
-}
-.site-header h1 {
-	font-family: "myriad-pro-condensed", "Arial Narrow", "open sans", sans-serif;
-	font-size: 28px;
-	font-size: 2rem;
-	font-weight: normal;
-}
-.site-header h2 {
-	font-family: "myriad-pro-condensed", "Arial Narrow", "open sans", sans-serif;
-	font-size: 21px;
-	font-size: 1.5rem;
-	font-weight: normal;
-	color: #d23;
-	line-height: 1;
-	font-style: italic;
-}
-.site-content article {
-	word-wrap: break-word;
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	hyphens: none;
-}
-
-
-/* content */
-.entry-content a,
-.comment-content a,
-.comments-link a,
-.entry-meta a {
-	color: #37a;
-	font-weight: 600;
-}
-.entry-content a:visited,
-.comment-content a:visited {
-	color: #76a;
-}
-.entry-content a:hover,
-.comment-content a:hover,
-.comments-link a:hover,
-.entry-meta a:hover {
-	color: #b00;
-}
 .entry-content h2 a,
 .entry-content h3 a,
 .entry-content h4 a,
@@ -220,8 +202,8 @@ body {
 .entry-content li,
 .comment-content li,
 .mu_register li {
-	margin: 0 0 10px 36px;
-	margin: 0 0 0.714285714 2.571428571rem;
+	margin: 0 0 14px 35px;
+	margin: 0 0 1rem 2.5rem;
 }
 .entry-content blockquote,
 .comment-content blockquote {
@@ -246,6 +228,27 @@ footer.entry-meta {
 	-moz-hyphens: none;
 	hyphens: none;
 }
+.entry-content a.donate-button:visited,
+.entry-content a.donate-button:link {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-size: 1rem;
+	letter-spacing: 1px;
+	font-weight: 600;
+	line-height: 1.5;
+	background: #d23;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 40px;
+	border-radius: 3px;
+	border: none;
+	padding: 7px 14px;
+	padding: 0.5rem 1rem;
+}
+.entry-content a.donate-button:hover {
+	color: #fff;
+	background: #27b;
+}
 
 /* Images */
 .entry-content img,
@@ -263,22 +266,8 @@ img.wp-post-image {
 span.alignleft,
 img.alignleft,
 .wp-caption.alignleft {
-	margin: 6px 24px 6px 0;
-	margin: 0.428571428rem 1.714285714rem 0.428571428rem 0;
-}
-
-/* social media buttons */
-.socialmedia-buttons {
-	width: 100%;
-	display: inline;
-}
-.socialmedia-buttons a {
-	margin-right: 4%;
-}
-.socialmedia-buttons a img {
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
+	margin: 7px 21px 7px 0;
+	margin: 0.5rem 1.5rem 0.5rem 0;
 }
 
 /* Buttons */
@@ -294,8 +283,6 @@ li.bypostauthor cite span {
 	line-height: 1;
 	color: #fff;
 	background: #27b;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
 	box-shadow: none;
 	height: 30px;
 	padding-top: 4px;
@@ -319,6 +306,17 @@ input[type="submit"].toggled-on {
 	color: #fff;
 	background: #d23;
 }
+/* social media buttons */
+.socialmedia-buttons {
+	width: 100%;
+	display: inline;
+}
+.socialmedia-buttons a {
+	margin-right: 4%;
+}
+.socialmedia-buttons a img {
+	box-shadow: none;
+}
 
 /* Sidebar */
 .widget-title {
@@ -341,46 +339,36 @@ input[type="submit"].toggled-on {
 	margin-bottom: 7px;
 	margin-bottom: 0.5rem;
 }
-.widget-area .widget a {
-	color: #37a;
-	font-weight: 600;
-}
-.widget-area .widget a:visited {
-	color: #76a;
-}
-.widget-area .widget a:hover {
-	color: #b00;
-}
 .widget-area .sidebar-donate {
 	font-size: 25px;
-	font-size: 1.785714285714rem;
+	font-size: 1.79rem;
 	line-height: 1.5;
 	font-weight: 600;
-  	text-align: center;
-  	background: #14a;
-  	color: #fff;
-  	padding-top: 15px;
-  	padding-top: 1.071428571rem;
-		border-radius: 2px;
+	text-align: center;
+	background: #14a;
+	color: #fff;
+	padding-top: 14px;
+	padding-top: 1rem;
+	border-radius: 2px;
 }
 .widget-area .sidebar-donate div {
-	margin-bottom: 15px;
-	margin-bottom: 1.071428571rem;
+	margin-bottom: 14px;
+	margin-bottom: 1rem;
 }
 .widget-area .sidebar-donate .orange {
-	font-size: 23px
-	font-size: 1.642857142857rem;
+	font-size: 23px;
+	font-size: 1.64rem;
 	line-height: 1.7;
 	font-weight: 600;
-  	text-align: center;
-  	background: #f93;
-  	color: #14a;
-  	text-decoration: none;
-  	border-bottom: none;
-		border-radius: 0 0 2px 2px;
+	text-align: center;
+	background: #f93;
+	color: #14a;
+	text-decoration: none;
+	border-bottom: none;
+	border-radius: 0 0 2px 2px;
 }
-.widget-area .sidebar-donate:hover {
-	color:d23;
+.widget-area .widget {
+  	margin-bottom: 7px;
 }
 #mc-embedded-subscribe-form {
   	padding: 14px;
@@ -388,49 +376,20 @@ input[type="submit"].toggled-on {
   	color: #fff;
 		border-radius: 2px;
 }
-.widget-area .widget a.donate-button:visited,
-.widget-area .widget a.donate-button:link,
-.entry-content a.donate-button:visited,
-.entry-content a.donate-button:link {
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
-	font-size: 14px;
-	font-size: 1rem;
-	letter-spacing: 1px;
-    padding: 4px 6px 6px 6px;
-	font-weight: 600;
-	line-height: 1.5;
-	background: #d23;
-	color: #fff;
-	text-align: center;
-	margin-bottom: 40px;
-	border-radius: 3px;
-	border: none;
-}
-.widget-area .widget a.donate-button:hover,
-.entry-content a.donate-button:hover {
-	color: #fff;
-	background: #27b;
-}
-.widget-area .widget {
-  	margin-bottom: 7px;
-}
 
-/* =Front page template
--------------------------------------------------------------- */
+/* Front page template */
 .template-front-page .widget-area .widget li {
 	list-style-position: outside;
 }
-.template-front-page .widget-area .widget li a {
-	color: #37a;
-}
-.template-front-page .widget-area .widget li a:visited {
-	color: #76a;
-}
-.template-front-page .widget-area .widget li a:hover {
-	color: #b00;
-}
 .author-avatar {
 	display: inline;
+}
+/* hide article header on home page */
+#post-9 .entry-header {
+	display: none;
+}
+.home .wp-caption.alignleft {
+	margin: 0 5px;
 }
 
 /* display posts styles */
@@ -461,6 +420,8 @@ input[type="submit"].toggled-on {
 	color: #666;
 	margin: 5px 0 10px;
 }
+
+/* Magazine columns */
 #magazine-columns h2 a {
 	color: #37a;
 	font-weight: 600;
@@ -471,6 +432,8 @@ input[type="submit"].toggled-on {
 	font-weight: 600;
 	border-bottom: 1px solid #b00;
 }
+
+/* Healthcare stories */
 .healthcare {
   color: #555;
   text-transform: uppercase;
@@ -479,6 +442,19 @@ input[type="submit"].toggled-on {
 	color: #d23;
 	text-transform: uppercase;
 	font-style: italic;
+}
+/* Format healthcare stories in the menu */
+.menu-item .healthcare,
+.menu-item .stories,
+.sub-menu .menu-item:hover .healthcare,
+.sub-menu .menu-item:hover .stories {
+	color: #fff;
+}
+.menu-item:hover .healthcare {
+	color: #555;
+}
+.menu-item:hover .stories {
+	color: #d23;
 }
 
 /* Horizontal lists - no borders */
@@ -535,6 +511,13 @@ div.mapp-overlay-body a {
 	padding: 0 3% 154px;
 	padding: 0 3% 11rem;
 }
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+	position: relative;
+}
 
 /* Site info at the bottom */
 footer[role="contentinfo"] {
@@ -561,7 +544,7 @@ footer[role="contentinfo"] a:hover {
 .site-info {
 	margin: 0 auto;
 	max-width: 1100px;
-	max-width: 78.571428571rem;
+	max-width: 78.57rem;
 	padding: 21px 3%;
 	padding: 1.5rem 3%;
 }
@@ -585,30 +568,12 @@ footer[role="contentinfo"] a:hover {
 #copyright {
 	float:right;
 	font-size: 11px;
-	font-size: 0.785714286rem;
-	line-height: 1.142857142;
+	font-size: 0.79rem;
+	line-height: 1.14;
 }
-.breadcrumbs {
-	font-size: 12px;
-	font-size: 0.857142857rem;
-	line-height: 1.142857142;
-	font-weight: 600;
-	clear: both;
-}
-/* Format healthcare stories in the menu */
-.menu-item .healthcare,
-.menu-item .stories,
-.sub-menu .menu-item:hover .healthcare,
-.sub-menu .menu-item:hover .stories {
-	color: #fff;
-}
-.menu-item:hover .healthcare {
-	color: #555;
-}
-.menu-item:hover .stories {
-	color: #d23;
-}
-/* This is outside any media queries so it applies to the small width menu as well. */
+
+/* Menu!!! */
+/* This is outside any media queries so that it will apply to the small width menu and IE as well. */
 .main-navigation ul.nav-menu {
   border: 1px solid #d23;
   border-bottom: none;
@@ -629,8 +594,8 @@ footer[role="contentinfo"] a:hover {
 .main-navigation li a {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: #fff;
-  padding: 5px 14px 5px 14px;
-  padding: 0.333rem 1rem 0.333rem 1rem;
+  padding: 4px 14px;
+  padding: 0.29rem 1rem;
   font-size: 15px;
   font-size: 1.07rem;
   line-height: 1.43;
@@ -672,29 +637,30 @@ ul.second-level {
 
 /* =Media queries
 -------------------------------------------------------------- */
+
 /* Minimum width of 600 pixels. */
 @media screen and (min-width: 600px) {
 	.site {
 		max-width: 1100px;
 		margin-left: auto;
 		margin-right: auto;
-		overflow:visible;
+		overflow: visible;
 	}
   ul.second-level {
-    width: 100%;
-    text-align: left;
+		width: 100%;
+		text-align: left;
   }
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (max-width: 979px) {
 	.site-header h1 {
-	    font-size: 22px;
-	    font-size: 1.571428571rem;
+		font-size: 22px;
+		font-size: 1.57rem;
 	}
 	.site-header h2 {
 		font-size: 18px;
-		font-size: 1.285714286rem;
+		font-size: 1.28rem;
 	}
 	.header-search,
 	.site-content,
@@ -744,23 +710,23 @@ ul.second-level {
 }
 
 @media print {
-  /* Cut out stuffs and whitespace */
-  	div.pre-page-header,
-  	#masthead,
-  	.breadcrumbs,
-  	.entry-meta,
-  	footer,
-  	img#wpstats {
-    	display: none !important;
+	/* Cut out stuffs and whitespace */
+	div.pre-page-header,
+	#masthead,
+	.breadcrumbs,
+	.entry-meta,
+	footer,
+	img#wpstats {
+		display: none !important;
   }
-  	.site-header,
-  	#page,
- 	#page .wrapper,
-  	#page .wrapper .site-content,
-  	#page .wrapper .site-content article {
-    	border: none !important;
-    	margin: 0 !important;
-    	padding: 0 !important;
+	.site-header,
+	#page,
+	#page .wrapper,
+	#page .wrapper .site-content,
+	#page .wrapper .site-content article {
+		border: none !important;
+		margin: 0 !important;
+		padding: 0 !important;
   }
 }
 
