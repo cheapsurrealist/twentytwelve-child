@@ -290,7 +290,6 @@ li.bypostauthor cite span {
 	font-size: 12px;
 	font-size: 0.9rem;
 	letter-spacing: 1px;
-    padding: 6px 6px 8px 6px;
 	font-weight: bold;
 	line-height: 1;
 	color: #fff;
@@ -298,6 +297,8 @@ li.bypostauthor cite span {
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
+	height: 30px;
+	padding-top: 4px;
 }
 .menu-toggle,
 input[type="submit"],
