@@ -20,7 +20,7 @@
 				<li><a href="/contact/">Contact us</a></li>
 				<li><a href="/accessibility-statement/">Accessibility</a></li>
 				<li><a href="/sitemap/">Sitemap</a></li>
-				<li><a href="/login/?action=login">Login</a></li>
+				<li><a href="/login/">Login</a></li>
 			</ul>
 		</div>
 		<div id="main-office" class="footer-item">
