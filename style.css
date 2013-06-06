@@ -162,10 +162,12 @@ h6 {
 }
 
 /* content */
-.entry-header .entry-title {
+.entry-header .entry-title,
+.archive-title {
 	font-size: 35px;
 	font-size: 2.5rem;
 	color: #d70;
+	font-weight: normal;
 }
 .entry-content h2 {
 	font-size: 28px;
