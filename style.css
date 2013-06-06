@@ -718,6 +718,7 @@ ul.second-level {
 	.breadcrumbs,
 	.entry-meta,
 	footer,
+	.a11y-toolbar,
 	img#wpstats {
 		display: none !important;
   }
