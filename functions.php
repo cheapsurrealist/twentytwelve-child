@@ -16,7 +16,7 @@ function twentytwelve_child_enqueue()
 	// Don't load twentytwelve's ie-specific stylesheet, since it causes problems with menu, etc.
 	wp_dequeue_style( 'twentytwelve-ie' );
 }
-add_action( 'wp_enqueue_scripts', 'twentytwelve_child_enqueue' );
+add_action( 'wp_enqueue_scripts', 'twentytwelve_child_enqueue', 11 );
 
 /**
  * Add Author to Display Posts Shortcode plugin
