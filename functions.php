@@ -12,6 +12,9 @@ function twentytwelve_child_enqueue()
   // Load nav menu
   //wp_register_script( 'nav', get_stylesheet_directory_uri() . '/nav.js', array( 'jquery' ) );
   //wp_enqueue_script( 'nav' );
+
+	// Don't load twentytwelve's ie-specific stylesheet, since it causes problems with menu, etc.
+	wp_dequeue_style( 'twentytwelve-ie' );
 }
 add_action( 'wp_enqueue_scripts', 'twentytwelve_child_enqueue' );
 
