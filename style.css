@@ -636,6 +636,13 @@ ul.second-level {
   background: #d23;
   color: #fff;
 }
+.ie .main-navigation li,
+.ie .main-navigation li a {
+	display: inline-block;
+}
+.ie .main-navigation li {
+	float: left;
+}
 
 /* =Media queries
 -------------------------------------------------------------- */
