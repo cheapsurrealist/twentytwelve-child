@@ -136,6 +136,7 @@ h6 {
 	font-size: 28px;
 	font-size: 2rem;
 	font-weight: normal;
+	text-align: left;
 }
 .site-header h2 {
 	font-family: "myriad-pro-condensed", "Arial Narrow", "open sans", sans-serif;
@@ -145,6 +146,7 @@ h6 {
 	color: #d23;
 	line-height: 1;
 	font-style: italic;
+	text-align: left;
 }
 .site-content article {
 	word-wrap: break-word;
