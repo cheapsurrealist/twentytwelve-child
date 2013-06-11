@@ -30,15 +30,6 @@
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 	<![endif]-->
-<!--[if !(IE 7) | !(IE 8)  ]
-	$(document).ready(function(){
-	$("nav li").hover(function() {
-	$(this).addClass("hover");
-	}, function() {
-	$(this).removeClass("hover");
-	});
-	});
-<![endif]-->
 	<?php wp_head(); ?>
 </head>
 
