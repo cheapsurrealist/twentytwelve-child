@@ -107,13 +107,12 @@ h6 {
 	color: #fff;
 	font-size: 12px;
 	font-size: 0.9rem;
-	border-bottom: none;
+	border-color: #777;
 }
 .alignleft-plus a:hover, 
 .alignright-plus a:hover {
-	color: #fff;
-	border-bottom: none;
-	outline: 1px dotted #fff;
+	color: #8AF;
+	border-color: #8AF;
 }
 
 /* Search Form */
@@ -539,9 +538,11 @@ footer[role="contentinfo"] {
 }
 footer[role="contentinfo"] a {
 	color: #fff;
+	border-color: #777;
 }
 footer[role="contentinfo"] a:hover {
-	color: #d23;
+	color: #8AF;
+	border-color: #8AF;
 }
 .site-info {
 	margin: 0 auto;
