@@ -38,7 +38,7 @@
 	<div class="pre-page-header">
 		<div class="pre-page-header-container">
 			<div class="alignleft-plus">
-				<a href="#content">Skip to Content</a> 
+				<a href="#content" onclick="jQuery('#content').attr('tabIndex',-1).focus();">Skip to Content</a> 
 			</div>
 			<div class="alignright-plus">
 				<a href="/contact/">Contact</a> | <a href="/sitemap/">Sitemap</a>
