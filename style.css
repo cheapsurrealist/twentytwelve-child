@@ -576,6 +576,9 @@ footer[role="contentinfo"] a:hover {
 	font-size: 0.79rem;
 	line-height: 1.14;
 }
+.a11y_stylesheet_path {
+	top: 0;
+}
 
 /* Menu!!! */
 /* This is outside any media queries so that it will apply to the small width menu and IE as well. */
